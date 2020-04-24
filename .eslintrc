@@ -1,0 +1,21 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "semi": [
+      "error",
+      "never"
+    ],
+    "guard-for-in": 0,
+    "linebreak-style": 0,
+    "no-await-in-loop": 0,
+    "no-restricted-syntax": 0,
+    "prefer-destructuring": ["error", {
+      "array": false,
+      "object": false
+    }, {
+      "enforceForRenamedProperties": false
+    }],
+    "no-console": "off",
+    "max-len": [2, 150, 4, {"ignoreUrls": true}]
+  }
+}
