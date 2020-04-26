@@ -6,6 +6,7 @@ import logger from 'koa-logger'
 // import cookie from 'koa-cookie'
 import router from './router'
 import config from './config'
+import log from './lib/log'
 
 const app = new Koa()
 app.proxy = true
@@ -24,6 +25,9 @@ if (process.env.NODE_ENV
 
 const port = process.env.NODE_ENV === 'dev' ? config.port.dev : config.port.staging
 
-app.listen(port, () => console.log(`server started http://localhost:${port}`))
+app.listen(port, () => {
+  log("root", `server started http://localhost:${port}`)
+  console.log(`server started http://localhost:${port}`)
+})
 
 export default app
