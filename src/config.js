@@ -4,7 +4,7 @@ const config = {
     home: '/home/ubuntu',
   },
   port: {
-    staging: 80,
+    staging: 2468,
     dev: 1369,
   },
   db: {
