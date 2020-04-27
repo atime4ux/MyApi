@@ -1,7 +1,7 @@
 const config = {
   app: {
     name: 'MyApi',
-    home: '/home/ubuntu',
+    home: '/home/opc',
   },
   port: {
     staging: 2468,
